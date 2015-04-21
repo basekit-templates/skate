@@ -1,0 +1,88 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+
+    <div class="logo-header container">
+        <div class="logo-companyname">
+                {{widget('logo', 'sitelogo', {"defaultlogo": asset('images/logo.jpg')})|raw}}
+                {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            <div class="header-extendednavigation">
+                {{widget('extendednavigation', 'extendednavigation', {})|raw}}
+            </div>
+        </div>
+    </div>
+
+    {{widget('line', 'footerline', {
+        'thickness': '1',
+        'length': '100',
+        'padding': '10',
+        'align': 'center'
+    })|raw}}
+
+<!-- Container -->
+<div class="container">
+    
+    <div class="homepage-slideshow">
+    	{{widget('responsiveslideshow', 'slideshow', {
+    	    'duration':'3',
+    	    'transSpeed': '1000',
+    	    'transType': 'fade',
+    	    'showButtons': true,
+    	    'showBullets': true,
+    	    'allowPause': false,
+    	    'allowLoop': true,
+    	    'images':[
+    	      {
+    	        'imageHeight':'400',
+    	        'imageWidth':'1000',
+    	        'url':asset('/images/slideshow/slideshow-1.jpg'),
+    	        'title':'First slide title',
+    	        'description': 'First slide description'
+    	      },
+    	      {
+    	        'imageHeight':'400',
+    	        'imageWidth':'1000',
+    	        'url':asset('/images/slideshow/slideshow-2.jpg'),
+    	        'title':'Second slide title',
+    	        'description': 'Second slide description'
+    	      },
+    	      {
+    	        'imageHeight':'400',
+    	        'imageWidth':'1000',
+    	        'url':asset('/images/slideshow/slideshow-3.jpg'),
+    	        'title':'Third slide title',
+    	        'description': 'Third slide description'
+    	      }
+    	    ]
+    	})|raw}}
+    </div>
+
+    <div class="feature-container clearfix">
+        {{widget('image', 'feature-image', { 'src': asset('images/feature.jpg'), 'alt': 'my image', 'fileName': 'feature-bg.jpg', 'fileSize': '58kb', 'imageSize': '440 x 660', 'imageWidth': '100%'})|raw}}
+            {{widget('feature', 'headerfeature', {
+                "header": "profile",
+                "strapline": "profile",
+                "defaultBgImg": asset('images/feature.jpg'),
+                "positionTopPercentage": "50",
+                "showBtn": true,
+                "buttonText": "Lorem Ipsum"
+            })|raw}}
+    </div>
+
+	<!-- Page Content -->
+	<section class="template-content">
+
+		<!-- Main Widet Zone -->
+	   	{{zone('main')|raw}}
+
+	</section>
+	<!-- End Page Content -->
+
+</div>
+<!-- End Container -->
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}

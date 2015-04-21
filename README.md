@@ -1,2 +1,4 @@
-# skate
-BaseKit Ecommerce Template
+Skate
+=========
+
+BaseKit eCommerce Template
