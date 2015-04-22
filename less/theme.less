@@ -19,16 +19,8 @@
 .template-footer {
 	.flex-vert-center; // Mixin > Flexbox: Vertical Align Center Mixin
 	min-height: 30px;
-	background-color: @color-swatch3;
+	background-color: @color-swatch4;
 	// Tablet: reduce height
-}
-
-.profile-header, 
-.logo-banner {
-    background-color: @color-swatch7;
-    @media @tablet {
-        text-align: center;
-    }
 }
 
 .logo-companyname {
@@ -48,7 +40,6 @@
 
 .template-footer {
 	min-height: 100px;
-	background-color: @color-swatch3;
 	text-align: center;
 	color: @font-swatch9-color;
 	// Change heading elements to white
@@ -128,19 +119,35 @@ blockquote:before {
 // Form
 // ----------
 
-form, 
-.form {
+form, .form {
     background-color: @color-swatch7;
-    padding: 20px;
     position: relative;
-    &:after {
-        border: 8px solid @color-swatch1;
-        content: "";
+    border: 1px solid darken(@color-swatch1,10%);
+    width: 70%;
+    margin: 20px auto 0;
+    &:before {
+        content: '\2605';
+        color: #000000;
         position: absolute;
-        top: 10px;
-        bottom: 10px;
-        left: 10px;
-        right: 10px;
+        top: -16px;
+        margin-left: -2px;
+        background-color: white;
+        width: 16px;
+        left: 16px;
+        right: 0;
+        margin: 0px auto;
+    }
+    &:after {
+        content: '\2605';
+        color: #000000;
+        position: absolute;
+        top: -16px;
+        background-color: white;
+        margin-left: -21px;
+        width: 16px;
+        left: -17px;
+        right: 0;
+        margin: 0px auto; 
     }
     @media @tablet {
         text-align: center;
@@ -210,14 +217,15 @@ input[type="email"],
 input[type="password"],
 textarea,
 .input--single-line {
-    border: 1px solid darken(@color-swatch7,8%);
+    border: 0;
     -webkit-appearance: none;
     background-color: @color-swatch1;
     border-radius: 0;
+    border-bottom: 1px solid darken(@color-swatch7,8%);
     &:focus {
-        border: 0;
         box-shadow: none;
         outline: none;
+        border-bottom: 1px solid darken(@color-swatch1,20%);
     }
 }
 
@@ -262,7 +270,7 @@ textarea,
 button, 
 .button,
 .blogpostlist__read-more {
-    padding: 8px 50px;
+    padding: 8px 20px;
     background-color: @color-swatch3;
     color: @font-swatch7-color;
     /*.transition (all,0.3s, ease-in-out);

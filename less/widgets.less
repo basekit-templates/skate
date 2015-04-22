@@ -33,7 +33,6 @@
 // 14.   #FACEBOOK
 // 15.   #YELP
 // 16.   #MAP
-// 17.   #HR LINE
 
 
 // -----------------------------
@@ -64,9 +63,10 @@
 // 2.  #Company Name
 // -----------------------------
 
-.company-name {
+.companyname {
+    margin: 20px 0 10px;
     @media @tablet {
-        text-align:center;
+        text-align: center;
     }
 }
 
@@ -148,7 +148,7 @@
     content: "";
     margin-left: 4px;
     border: 5px solid transparent;
-    border-top-color: @color-swatch6;
+    border-top-color: @color-swatch4;
 }
 
 // Add Styles to Selected Li
@@ -158,6 +158,159 @@
     }
 }
 
+
+// -----------------------------
+// 4.  #Feature
+// -----------------------------
+
+// Feature Background (Image)
+// --------------------------
+
+.feature__background-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: table;
+    height: 350px;
+    width: 100%;
+    @media @tablet {
+        min-height: 350px;
+    }
+    @media @mobile {
+        min-height: 200px;
+    }
+}
+
+
+// Feature Content Wrap
+// --------------------
+
+.feature__content-wrap {
+    text-align:center;
+    max-width: 80%;
+    vertical-align: middle;
+    display: table-cell;
+    @media @tablet {
+        max-width: 100%;
+    }
+}
+
+// Feature Content
+// ---------------
+
+.feature__headline {
+    max-width: 70%;
+    margin: 0px auto;
+    @media @tablet {
+        font-size: bkscale(@font-swatch8-font-size,0.8);
+        line-height: bkscale(@font-swatch8-line-height,0.8);
+        max-width: 100%;
+    }
+    @media @mobile {
+        font-size: bkscale(@font-swatch8-font-size,0.7);
+        line-height: bkscale(@font-swatch8-line-height,0.7);
+    }
+}
+
+.feature__strapline {
+    max-width: 70%;
+    margin: 0px auto;
+    @media @tablet {
+        font-size: bkscale(@font-swatch9-font-size,0.9);
+        line-height: bkscale(@font-swatch9-line-height,0.9);
+        max-width: 100%;
+    }
+    @media @mobile {
+        font-size: bkscale(@font-swatch9-font-size,0.8);
+        line-height: bkscale(@font-swatch9-line-height,0.8);
+    }
+}
+
+
+// Feature Button
+// ---------------
+
+.feature__button { 
+    margin: 10px 0 0 0; 
+    color: @font-swatch7-color;
+}
+
+.feature-container {
+    margin: 20px 0;
+}
+
+.widget__feature {
+    width: 49%;
+    display: inline-block;
+    float: left;
+    @media @tablet {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+}
+
+.feature-container [data-widget-type="feature"]:first-child .feature {
+    margin-right: 2%;
+    @media @tablet {
+        margin-bottom: 3%;
+    }
+}
+
+
+
+// -----------------------------
+// 7.  #Image Widget
+// -----------------------------
+
+.imagewidget__figure {
+    margin: 0;
+}
+
+// Image Captions
+// --------------
+
+// Gallery & Slideshow
+.image-title,
+.image-description {
+    color: @color-swatch1;
+}
+
+// Image Widget
+
+.imagewidget {
+    .image-title {
+        color: @font-swatch4-color;
+        font-size: @font-swatch4-font-size;
+        line-height: @font-swatch4-line-height;
+        text-shadow: none;
+    }
+    .image-description {
+        color: @font-swatch5-color;
+        font-size: @font-swatch5-font-size;
+        line-height: @font-swatch5-line-height;
+        text-shadow: none;
+    }
+}
+
+.widget__imagewidget {
+    width: 49%;
+    display: inline-block;
+    float: left;
+    margin-right: 1%;
+    @media @tablet {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+}
+
+.imagewidget__image {
+    height: 350px;
+}
 
 
 
@@ -242,7 +395,7 @@
     display: none;
     margin: 0;
     padding: 20px;
-    background-color: fade(@color-swatch3, 75%)
+    background-color: fade(@color-swatch4, 75%)
 }
 
 // Show Caption
@@ -546,12 +699,12 @@
   margin-bottom: 5px;
   position: relative;
   height: 14px;
-  width: 14px;
+  width: 18px;
 }
 
 .responsiveslideshow .pagination-item.selected .button--pagination {
     background-color: transparent;
-    color: @font-swatch8-color;
+    color: @font-swatch7-color;
 }
 
 .responsiveslideshow__next-button, 
@@ -576,170 +729,13 @@
 }
 
 .responsiveslideshow__button:after {
-  content: '\2605';
-  color: #2b3040;
-  font-size: 14px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 5;
-}
-
-
-
-// -----------------------------
-// 7.  #Feature
-// -----------------------------
-
-.feature-container {
-    margin: 20px 0;
-}
-
-.bk-feature { 
-    @media @tablet {
-        caption-side: top;
-        display: table;
-        padding: 15px;
-    }
-    .widget {
-        &.image, &.feature {
-            float: left;
-            min-height: 450px;
-            max-height: 550px;
-            text-align: center;
-            @media @tablet {
-                float: none;
-                min-height: 1px;
-            }
-            span img {
-                height: 450px;
-                @media @tablet {
-                    height: auto;
-                }
-            }
-        }
-        &.image {
-            padding: 0;
-            margin-left: 0.6%;
-            width: 64.4%;
-            @media @tablet {
-                display: table-header-group;
-                margin-bottom: 15px;
-                width: 100%;
-            }
-        }
-        &.feature {
-            width: 35%;
-            @media @tablet {
-                width: 100%;
-            }
-        }
-    }
-}
-
-.widget {
-    &.feature {
-        margin: 0 0 15px;
-        width: 65%;
-        padding: 0;
-        .feature-bgimg {
-            height: 450px;
-            @media @tablet {
-                height: auto;
-            }
-            .content {
-                background-color: fade(@color-swatch3, 90%);
-                padding: 60px 0;
-                height: 450px;
-                @media @tablet {
-                    padding: 30px 0;
-                    height: auto;
-                }
-                .spare {
-                    @media @tablet {
-                        padding: 0 30px;
-                    }
-                }
-            }
-            h2, h3 {
-                text-align: center;
-                @media @tablet {
-                    max-width: 100%;
-                }
-            }
-            h2 {
-                padding: 0 0 5px 0;
-                @media @mobile {
-                    font-size: bkscale(@font-swatch1-font-size, 0.85);
-                    padding-bottom: 10px;
-                }
-            }
-            h3 {
-                @media @mobile {
-                    font-size: bkscale(@font-swatch5-font-size, 0.94);
-                }
-            }
-        }
-    }
-}
-
-.widget.feature.bk-tpl-hidden + .widget.image {
-    display: block;
-    float: none;
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-}
-
-.widget__feature {
-    width: 49%;
-    display: inline-block;
-    float: left;
-    margin-left: 10px;
-}
-
-.widget__imagewidget {
-    width: 49%;
-    display: inline-block;
-    float: left;
-    margin-right: 10px;
-}
-
-
-
-
-// -----------------------------
-// 7.  #Image Widget
-// -----------------------------
-
-.imagewidget__figure {
-    margin: 0;
-}
-
-// Image Captions
-// --------------
-
-// Gallery & Slideshow
-.image-title,
-.image-description {
-    color: @color-swatch1;
-}
-
-// Image Widget
-
-.imagewidget {
-    .image-title {
-        color: @font-swatch4-color;
-        font-size: @font-swatch4-font-size;
-        line-height: @font-swatch4-line-height;
-        text-shadow: none;
-    }
-    .image-description {
-        color: @font-swatch5-color;
-        font-size: @font-swatch5-font-size;
-        line-height: @font-swatch5-line-height;
-        text-shadow: none;
-    }
+    content: '\2605';
+    color: #2b3040;
+    font-size: 18px;
+    position: absolute;
+    left: -1px;
+    top: -5px;
+    z-index: 5;
 }
 
 
@@ -817,7 +813,7 @@
 .responsiveslideshow__previous-button,
 .responsiveslideshow__pause-toggle {
     background-color: @color-swatch3;
-    color: @font-swatch8-color;
+    color: @font-swatch7-color;
 }
 
 
@@ -832,14 +828,9 @@
     margin: 20px 0 30px;
 }
 
-.contactform__fieldset {
-    margin: 0px auto;
-    display: table;
-    width: 70%;
-    text-align: center;
-    @media @mobile {
-        width: 80%;
-    }
+// Label
+.contactform__label {
+    display: none;
 }
 
 // Inputs
@@ -853,13 +844,14 @@ input.input[type=search],
     }
     &:focus {
         border-color: @color-swatch4;
+        border-bottom: 1px solid darken(@color-swatch1,20%);
     }
 }
 
 // Button
 .contact-form__input {
-    margin: 0px auto;
-    display: table;
+  margin: 0px auto;
+  display: table;
     border: 0;
 }
 
@@ -930,15 +922,7 @@ input.input[type=search],
 .widget__twitter {
     background-color: @color-swatch7;
     padding: 40px 40px 15px;
-    &:after {
-        border: 8px solid @color-swatch1;
-        content: "";
-        position: absolute;
-        top: 10px;
-        bottom: 10px;
-        left: 10px;
-        right: 10px;
-    }
+    .clearfix;
     @media @tablet {
         padding: 20px;
     }
@@ -949,9 +933,6 @@ input.input[type=search],
 
 .tweet-list {
     padding: 0;
-    position: relative;
-    z-index: 9999;
-    padding: 10px;
     @media @tablet {
         padding: 20px;
     }
@@ -968,7 +949,7 @@ input.input[type=search],
 }
 
 .twitter__tweet-wrap {
-    display: block;
+    display: inline-block;
     vertical-align: top;
     a {
         font-weight: @font-swatch1-font-weight;
@@ -980,13 +961,20 @@ input.input[type=search],
 }
 
 .twitter__tweet-item {
-    border-bottom: 1px solid @color-swatch1;
     padding: 0 0 30px 0;
     margin: 0 0 30px 0;
+    width: 48%;
+    display: inline-block;
+    float: left;
     &:last-child {
         border-bottom:0;
         padding: 0 0 7px 0;
         margin: 0 0 7px 0;
+    }
+    @media @tablet {
+        width: 100%;
+        display: block;
+        float: intial;
     }
 }
 
@@ -998,9 +986,64 @@ input.input[type=search],
 // 12.  #Divider (Keyline)
 // -----------------------------
 
-// Add styles here...
+.header-line {
+    hr.rule {
+        background-color: darken(@color-swatch7,10%);
+        height: 1px;
+        &:after {
+            content: '\2605';
+            color: @font-swatch4-color;
+            position: absolute;
+            top: -5px;
+            background-color: white;
+            margin-left: -21px;
+            width: 20px;    
+        }
+        &:before {
+            color: @font-swatch4-color;
+            position: absolute;
+            top: -5px;
+            margin-left: -2px;
+            background-color: white;
+            width: 16px;
+        }
+    }
+}
 
+.widget__line {
+    &:before {
+        content: '\2605';
+        color: @font-swatch4-color;
+        position: absolute;
+        top: -16px;
+        margin-left: -2px;
+        background-color: @color-swatch1;
+        width: 15px;
+        left: 16px;
+        right: 0;
+        margin: 0px auto;
+    }
+    &:after {
+        content: '\2605';
+        color: @font-swatch4-color;
+        position: absolute;
+        top: -16px;
+        background-color: @color-swatch1;
+        margin-left: -21px;
+        width: 16px;
+        left: -17px;
+        right: 0;
+        margin: 0px auto; 
+    }
+}
 
+hr.rule {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: darken(@color-swatch7,10%);
+    margin: 20px 0px;
+}
 
 
 // -----------------------------
@@ -1116,31 +1159,3 @@ input.input[type=search],
     height: initial;
 }
 
-
-
-
-// -----------------------------
-// 17. #Hr Line
-// -----------------------------
-
-hr.rule {
-    background-color: darken(@color-swatch7,10%);
-    &:after {
-        content: '\2605';
-        color: @font-swatch4-color;
-        position: absolute;
-        top: -5px;
-        background-color: white;
-        margin-left: -21px;
-        width: 20px;    
-    }
-    &:before {
-        content: '\2605';
-        color: @font-swatch4-color;
-        position: absolute;
-        top: -5px;
-        margin-left: -2px;
-        background-color: white;
-        width: 16px;
-    }
-}

@@ -14,12 +14,9 @@
         </div>
     </div>
 
-    {{widget('line', 'footerline', {
-        'thickness': '1',
-        'length': '100',
-        'padding': '10',
-        'align': 'center'
-    })|raw}}
+<div class="header-line">
+    {{widget('line', 'footerline', {})|raw}}
+</div>
 
 <!-- Container -->
 <div class="container">
@@ -29,7 +26,7 @@
     	    'duration':'3',
     	    'transSpeed': '1000',
     	    'transType': 'fade',
-    	    'showButtons': true,
+    	    'showButtons': false,
     	    'showBullets': true,
     	    'allowPause': false,
     	    'allowLoop': true,
@@ -60,11 +57,18 @@
     </div>
 
     <div class="feature-container clearfix">
-        {{widget('image', 'feature-image', { 'src': asset('images/feature.jpg'), 'alt': 'my image', 'fileName': 'feature-bg.jpg', 'fileSize': '58kb', 'imageSize': '440 x 660', 'imageWidth': '100%'})|raw}}
-            {{widget('feature', 'headerfeature', {
+            {{widget('feature', 'feature-left', {
+                "header": " ",
+                "strapline": " ",
+                "defaultBgImg": asset('images/feature-img1.jpg'),
+                "positionTopPercentage": "50",
+                "showBtn": false,
+                "buttonText": ""
+            })|raw}}
+            {{widget('feature', 'feature-right', {
                 "header": "profile",
                 "strapline": "profile",
-                "defaultBgImg": asset('images/feature.jpg'),
+                "defaultBgImg": asset('images/feature-img2.jpg'),
                 "positionTopPercentage": "50",
                 "showBtn": true,
                 "buttonText": "Lorem Ipsum"

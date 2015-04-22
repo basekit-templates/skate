@@ -80,19 +80,10 @@
 .blogpostlist .post-article {
     background-color: @color-swatch7;
     position: relative;
-    padding: 20px 40px;
     z-index: 2;
     float: left;
     width: 100%;
-    &:after {
-        border: 8px solid @color-swatch1;
-        content: "";
-        position: absolute;
-        top: 10px;
-        bottom: 10px;
-        left: 10px;
-        right: 10px;
-    }
+    border: 1px solid darken(@color-swatch1,10%);
 	@media @tablet {
 		padding: 40px 30px 30px 20px;
 	}
@@ -120,7 +111,7 @@
 
 .blogpostlist__post-image {
     display: inline-block;
-    width: 50%;
+    width: 30%;
     @media @tablet {
         float: initial;
         width: 100%;
@@ -236,8 +227,9 @@
 }
 
 .post-image + .post-content + .blogpostlist__post-footer {
-    padding-left: 50%;
     width: 100%;
+    text-align: center;
+    border-top: 1px solid darken(@color-swatch1,10%);
     @media @tablet {
         width: initial;
         padding-left: 0;
@@ -282,24 +274,41 @@
 // Blog Post
 
 .blogpost__post-header {
+    border-bottom: 1px solid darken(@color-swatch1,10%);
+    margin: 20px 0px;
     text-align: center;
+    padding-bottom: 10px;
+    &:before {
+        content: '\2605';
+        color: @font-swatch4-color;
+        position: absolute;
+        top: 40px;
+        margin-left: -2px;
+        background-color: @color-swatch1;
+        width: 15px;
+        left: 16px;
+        right: 0;
+        margin: 0px auto;
+    }
+    &:after {
+        content: '\2605';
+        color: @font-swatch4-color;
+        position: absolute;
+        top: 40px;
+        background-color: @color-swatch1;
+        margin-left: -21px;
+        width: 16px;
+        left: -17px;
+        right: 0;
+        margin: 0px auto; 
+    }
 }
 
 .blogpost__post-article {
     background-color: @color-swatch7;
     position: relative;
-    padding: 10px;
     z-index: 2;
-    padding: 40px 40px 20px 40px;
-    &:after {
-        border: 8px solid @color-swatch1;
-        content: "";
-        position: absolute;
-        top: 10px;
-        bottom: 10px;
-        left: 10px;
-        right: 10px;
-    }
+    border: 1px solid darken(@color-swatch1,10%);
 }
 
 hr {

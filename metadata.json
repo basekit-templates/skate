@@ -22,8 +22,8 @@
         "Swatch 1": {
             "color1":"#ffffff",
             "color2":"#ca1414",
-            "color3":"#000000",
-            "color4":"#2b3040",
+            "color3":"#d40707",
+            "color4":"#000000",
             "color5":"#2b3040",
             "color6":"#FFFFFF",
             "color7":"#FFFFFF"
@@ -133,7 +133,7 @@
             "font-size": "34px",
             "font-weight": "300",
             "line-height": "42px",
-            "color": "@color-swatch1",
+            "color": "@color-swatch4",
             "letter-spacing": "3px"
         },
         "font9": {
@@ -141,7 +141,7 @@
             "font-size": "20px",
             "font-weight": "300",
             "line-height": "28px",
-            "color": "@color-swatch1",
+            "color": "@color-swatch4",
             "letter-spacing": "3px"
         },
         "font10": {

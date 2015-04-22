@@ -4,15 +4,22 @@
 
 {% include "includes/header.twig" %}
 
-<div class="template-title-wrap">
-    <div class="template-title">
-    	{{widget('logo', 'sitelogo', {"defaultlogo": asset('images/logo.png')})|raw}}
-        <h1 style="padding-bottom: 0;">
-            <span>{{ page.title }}</span>
-        </h1>
-        {{widget('content', 'logobannerright1', {content: '<p>Lorem ipsum dolor sit amet</p>'})|raw}}
+<div class="logo-header container">
+    <div class="logo-companyname">
+            {{widget('logo', 'sitelogo', {"defaultlogo": asset('images/logo.jpg')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        <div class="header-extendednavigation">
+            {{widget('extendednavigation', 'extendednavigation', {})|raw}}
+        </div>
     </div>
 </div>
+
+{{widget('line', 'footerline', {
+    'thickness': '1',
+    'length': '100',
+    'padding': '10',
+    'align': 'center'
+})|raw}}
 
 <div class="bk-pt-default">
 	

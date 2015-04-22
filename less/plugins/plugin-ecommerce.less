@@ -13,6 +13,8 @@
 // 5. #BASKET FILTERS
 
 
+
+
 // -------------------------------
 // 1. #Single Product
 // -------------------------------
@@ -24,16 +26,31 @@
     @media @tablet {
         padding: 40px 0;
     }
+    margin-top: 20px;
+    border: 1px solid darken(@color-swatch1,10%);
     &:before {
-        border: 8px solid darken(@color-swatch7,5%);
-        content: "";
+        content: '\2605';
+        color: @font-swatch4-color;
         position: absolute;
-        top: 10px;
-        bottom: 10px;
-        left: 10px;
-        right: 10px;
-        width: initial;
-        z-index: 1;
+        top: -15px;
+        margin-left: -2px;
+        background-color: @color-swatch1;
+        width: 15px;
+        left: 16px;
+        right: 0;
+        margin: 0px auto;
+    }
+    &:after {
+        content: '\2605';
+        color: @font-swatch4-color;
+        position: absolute;
+        top: -15px;
+        background-color: @color-swatch1;
+        margin-left: -21px;
+        width: 16px;
+        left: -17px;
+        right: 0;
+        margin: 0px auto; 
     }
     .clearfix
 }
@@ -325,6 +342,7 @@
     padding: 10px;
     margin-right: 20px;
     // Remove icon spacing
+    background-color: @color-swatch4
     &:before {
         margin-right: 0;
     }
@@ -386,6 +404,10 @@
     margin-bottom: 0;
     padding: 6px 30px;
     margin-left: 10px;
+    background-color: @color-swatch4;
+    &:hover {
+        background-color: @color-swatch4;
+    }
     @media @tablet {
         margin: 0px auto;
         display: table;
