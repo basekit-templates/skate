@@ -28,10 +28,14 @@
 }
 
 .header-textwidget {
-    p {
+    p, h1, h2, h3, h4 {
         color: @font-swatch7-color;
         margin-top: 10px;
     }
+}
+
+.logo-header.container {
+    padding-top: 40px;
 }
 
 .template-header {
@@ -41,13 +45,8 @@
 }
 
 .fixed-header {
-    position: fixed;
     width: 100%;
-    z-index: 1;
     background-color: @color-swatch1;
-    position: fixed;
-    top: 0;
-    left: 0;
     -webkit-transition: min-height 0.6s;
     -moz-transition: min-height 0.6s;
     -ms-transition: min-height 0.6s;
@@ -60,8 +59,12 @@
 }
 
 .fixed-header.shrink {
-    min-height: 16%;
-    border-bottom: 1px solid darken(@color-swatch1,10%);
+        min-height: 16%;
+        border-bottom: 1px solid darken(@color-swatch1,10%);
+        position: fixed;
+        z-index: 9;
+        top:0;
+        left:0;
     .container {
         padding: 10px 0 0 0;
     }
