@@ -34,6 +34,49 @@
     }
 }
 
+.template-header {
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: @color-swatch1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+    text-align: center;
+    padding-top: 60px;
+    z-index: 9999;
+}
+
+.fixed-header.shrink {
+    height: 15%;
+    border-bottom: 1px solid darken(@color-swatch1,10%);
+}
+
+.fixed-header .logo-image {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    height: inherit;
+}
+
+.fixed-header.shrink .logo-image {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 50px;
+}
 
 // Footer
 // ------
@@ -127,27 +170,15 @@ form, .form {
     margin: 20px auto 0;
     &:before {
         content: '\2605';
-        color: #000000;
+        color: @font-swatch4-color;
         position: absolute;
         top: -16px;
         margin-left: -2px;
-        background-color: white;
+        background-color: @color-swatch1;
         width: 16px;
-        left: 16px;
+        left: 0;
         right: 0;
         margin: 0px auto;
-    }
-    &:after {
-        content: '\2605';
-        color: #000000;
-        position: absolute;
-        top: -16px;
-        background-color: white;
-        margin-left: -21px;
-        width: 16px;
-        left: -17px;
-        right: 0;
-        margin: 0px auto; 
     }
     @media @tablet {
         text-align: center;
@@ -161,7 +192,6 @@ form, .form {
 .form-body {
 	margin: 10px 0 20px;
     position: relative; 
-    z-index: 9999;
 	@media @mobile {
 		margin: 20px;
 	}
@@ -271,7 +301,7 @@ button,
 .button,
 .blogpostlist__read-more {
     padding: 8px 20px;
-    background-color: @color-swatch3;
+    background-color: @color-swatch4;
     color: @font-swatch7-color;
     /*.transition (all,0.3s, ease-in-out);
 

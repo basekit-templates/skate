@@ -6,7 +6,7 @@
 .blogsearch__fieldset {
     margin: 0px auto 10px;
     display: table;
-    width: 70%;
+    width: 100%;
     text-align: center;
     @media @mobile {
         width: 80%;
@@ -80,7 +80,6 @@
 .blogpostlist .post-article {
     background-color: @color-swatch7;
     position: relative;
-    z-index: 2;
     float: left;
     width: 100%;
     border: 1px solid darken(@color-swatch1,10%);
@@ -129,17 +128,8 @@
 }
 
 .blogpostlist__read-more {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  text-decoration: none;
-  display: inline-block;
-  &:hover {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-  text-decoration: none;
-  }
+    text-decoration: none;
+    display: inline-block;
     @media @mobile {
         padding: 8px 30px;
     }
@@ -267,7 +257,6 @@
 .blogpostlist__post-content
  {
     position: relative;
-    z-index: 9999;
     vertical-align: top;
 }
 
@@ -286,28 +275,15 @@
         margin-left: -2px;
         background-color: @color-swatch1;
         width: 15px;
-        left: 16px;
+        left: 0;
         right: 0;
         margin: 0px auto;
-    }
-    &:after {
-        content: '\2605';
-        color: @font-swatch4-color;
-        position: absolute;
-        top: 40px;
-        background-color: @color-swatch1;
-        margin-left: -21px;
-        width: 16px;
-        left: -17px;
-        right: 0;
-        margin: 0px auto; 
     }
 }
 
 .blogpost__post-article {
     background-color: @color-swatch7;
     position: relative;
-    z-index: 2;
     border: 1px solid darken(@color-swatch1,10%);
 }
 
@@ -332,12 +308,14 @@ hr {
 // Blog Post List Footer
 .blogpost__post-footer {
 	border: 1px solid @color-swatch7;
-	padding: 0 20px 30px;
+	padding: 0 20px 0;
 	text-align: center;
 }
 
 .blogpost__sharing-links {
     margin-top: 15px;
+    border-top: 1px solid darken(@color-swatch1,10%);
+    padding: 20px 20px 30px;
 }
 
 // Blog Post Buttons

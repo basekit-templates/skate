@@ -17,21 +17,9 @@
         margin-left: -2px;
         background-color: @color-swatch1;
         width: 15px;
-        left: 16px;
+        left: 0;
         right: 0;
         margin: 0px auto;
-    }
-    &:after {
-        content: '\2605';
-        color: @font-swatch4-color;
-        position: absolute;
-        top: -15px;
-        background-color: @color-swatch1;
-        margin-left: -21px;
-        width: 16px;
-        left: -17px;
-        right: 0;
-        margin: 0px auto; 
     }
 }
 
@@ -74,6 +62,10 @@
     margin-bottom: 20px;
 }
 
+.menu__section-body {
+    padding: 0 10px;
+}
+
 // Menu Content
 .widget__menu {
 	text-align: center;
@@ -106,7 +98,7 @@
 
 .menu__dietary-item {
 	&:before {
-        content: "\f111";
+        content: '\2605';
 		font-size: 8px;
 		vertical-align: top;
     }
@@ -123,15 +115,14 @@
 }
 
 // Featured Section
-.menu-item--featured, 
 .menu-section--featured {
     background-color: @color-swatch7;
     position: relative;
-    padding: 40px;
     z-index: 2;
     margin-top: 20px;
     border-top: 1px solid darken(@color-swatch1,10%);
     border-bottom: 1px solid darken(@color-swatch1,10%);
+    padding: 0;
     &:before {
         content: '\2605';
         color: @font-swatch4-color;
@@ -140,21 +131,9 @@
         margin-left: -2px;
         background-color: @color-swatch1;
         width: 15px;
-        left: 16px;
+        left: 0;
         right: 0;
         margin: 0px auto;
-    }
-    &:after {
-        content: '\2605';
-        color: @font-swatch4-color;
-        position: absolute;
-        top: -15px;
-        background-color: @color-swatch1;
-        margin-left: -21px;
-        width: 16px;
-        left: -17px;
-        right: 0;
-        margin: 0px auto; 
     }
     @media @mobile {
         padding: 20px;
@@ -164,10 +143,9 @@
 .menu-item--featured {
     background-color: @color-swatch7;
     position: relative;
-    padding: 40px;
     z-index: 2;
-    margin-top: 20px;
     border: 1px solid darken(@color-swatch1,10%);
+    padding: 0;
     &:before {
         content: '\2605';
         color: @font-swatch4-color;
@@ -176,21 +154,9 @@
         margin-left: -2px;
         background-color: @color-swatch1;
         width: 15px;
-        left: 16px;
+        left: 0;
         right: 0;
         margin: 0px auto;
-    }
-    &:after {
-        content: '\2605';
-        color: @font-swatch4-color;
-        position: absolute;
-        top: -15px;
-        background-color: @color-swatch1;
-        margin-left: -21px;
-        width: 16px;
-        left: -17px;
-        right: 0;
-        margin: 0px auto; 
     }
     @media @mobile {
         padding: 20px;
@@ -203,5 +169,6 @@
     background-color: @color-swatch7;
     padding: 20px;
     margin-bottom: 20px;
-    border: 1px solid #f2f2f2;
+    border-top: 1px solid darken(@color-swatch1, 10%);
+    border-bottom: 1px solid darken(@color-swatch1, 10%);
 }

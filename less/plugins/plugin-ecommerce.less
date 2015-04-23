@@ -36,21 +36,9 @@
         margin-left: -2px;
         background-color: @color-swatch1;
         width: 15px;
-        left: 16px;
+        left: 0;
         right: 0;
         margin: 0px auto;
-    }
-    &:after {
-        content: '\2605';
-        color: @font-swatch4-color;
-        position: absolute;
-        top: -15px;
-        background-color: @color-swatch1;
-        margin-left: -21px;
-        width: 16px;
-        left: -17px;
-        right: 0;
-        margin: 0px auto; 
     }
     .clearfix
 }
@@ -92,7 +80,6 @@
     width: 80%;
     margin: 0px auto;
     position: relative;
-    z-index: 9999;
 }
 
 // Product Images
@@ -174,7 +161,6 @@
     background-color: @color-swatch3;
     color: @font-swatch7-color;
     margin: 20px 0;
-    z-index: 9999;
     position: relative;
 }
 
@@ -235,6 +221,20 @@
     background-color: @color-swatch7;
     padding: 20px;
     margin-bottom: 20px;
+    border: 1px solid darken(@color-swatch1,10%);
+    margin-top: 20px;
+    &:before {
+        content: '\2605';
+        color: @font-swatch4-color;
+        position: absolute;
+        top: -15px;
+        margin-left: -2px;
+        background-color: @color-swatch1;
+        width: 15px;
+        left: 0;
+        right: 0;
+        margin: 0px auto;
+    }
 }
 
 .ecomproductslist__product-content {
@@ -464,7 +464,6 @@
 .ecombasketsummary__summary-table,
 .ecombasketsummary__summary-form {
     position: relative;
-    z-index: 9999;
     @media @mobile {
         margin: 20px auto;
     }
@@ -491,15 +490,11 @@
     position: relative;
     padding: 0;
     background-color: transparent;
-    &:after {
-        border: 0;
-        content: "";
-        position: absolute;
-        top: 10px;
-        bottom: 10px;
-        left: 10px;
-        right: 10px;
-        z-index: 1;
+}
+
+.ecomproductslist__form {
+    &:before {
+        display: none;
     }
 }
 
@@ -536,7 +531,7 @@
 
 .ecomproductslist__fieldset--search {
     float: right;
-    width: 40%;
+    width: 50%;
     @media @tablet {
         float: initial;
         width: 100%;
@@ -544,8 +539,6 @@
 }
 
 .ecomproductslist__fieldset--filters {
-    float: left;
-    width: 60%;
     @media @tablet {
         width:100%;
     }
