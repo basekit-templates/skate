@@ -67,6 +67,7 @@
     margin: 30px 0 10px;
     @media @tablet {
         text-align: center;
+        margin: 20px 0 20px;
     }
 }
 
@@ -964,9 +965,7 @@ input.input[type=search],
 }
 
 .twitter__tweet-item {
-    width: 48%;
     display: inline-block;
-    float: left;
     &:last-child {
         border-bottom:0;
         padding: 0 0 7px 0;
@@ -979,6 +978,10 @@ input.input[type=search],
     }
 }
 
+.twitter__timestamp,
+.twitter-feed__via {
+    color: @font-swatch7-color;
+}
 
 
 
@@ -1032,6 +1035,9 @@ hr.rule {
 // -----------------------------
 
 .template-footer {
+    .container {
+        margin: 0px auto;
+    }
     .twitter {
         background-color: transparent;
         border: 0;
@@ -1067,7 +1073,9 @@ hr.rule {
     }
     .signupform__form {
         padding: 0;
-        &:after {
+        width: 100%;
+        border: 0;
+        &:before {
             display: none;
         }
     }
