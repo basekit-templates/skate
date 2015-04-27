@@ -53,27 +53,25 @@
         });
     </script>
 
-<!-- Resizing Header Script -->
+    <!-- Resizing Header Script -->
     <script>
-        if($(window).width() >= 860) {
-            $(function(){
-                var shrinkHeader = 300;
-                $(window).scroll(function() {
-                    var scroll = getCurrentScroll();
-                    if ( scroll >= shrinkHeader ) {
-                    $('.fixed-header').addClass('shrink');
-                }
-                else {
-                    $('.fixed-header').removeClass('shrink');
-                }
-            });
-            function getCurrentScroll() {
-                return window.pageYOffset || document.documentElement.scrollTop;
-                }
-            });
+        $(function(){
+            var shrinkHeader = 300;
+            $(window).scroll(function() {
+            var scroll = getCurrentScroll();
+            if ( scroll >= shrinkHeader ) {
+            $('.fixed-header').addClass('shrink');
+            if ($(window).width() <= 479) { display:none; }
         }
+        else {
+            $('.fixed-header').removeClass('shrink');
+        }
+    });
 
-    </script>
+    function getCurrentScroll() {
+        return window.pageYOffset || document.documentElement.scrollTop;
+    }   
+    });
         
 </script>
 </body>
