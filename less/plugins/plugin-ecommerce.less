@@ -29,11 +29,7 @@
 }
 
 .ecombasketsummary__summary-section {
-    padding: 20px;
     background-color: @color-swatch7;
-    @media @tablet {
-        padding: 20px;
-    }
 }
 
 .ecomproduct__legend {
@@ -486,6 +482,12 @@
     }
 }
 
+.ecombasketsummary__cell {
+    @media @tablet {
+        text-align: center;
+    }
+}
+
 .summary-table .cell {
     padding: 25px 12px;
     @media @mobile {
@@ -533,6 +535,9 @@
 
 .ecombasketsummary__quantity-wrap {
     background-color: @color-swatch7;
+    @media @mobile {
+        margin: 10px auto;
+    }
 }
 
 .quantity-wrap {
@@ -592,6 +597,9 @@ th {
 .ecomproductslist__listing-order {
     clear: both;
     background-color: @color-swatch1;
+    @media @tablet {
+        text-align: center;
+    }
 }
 
 // Search Button + Clear Search Button

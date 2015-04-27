@@ -178,10 +178,12 @@
     height: 350px;
     width: 100%;
     @media @tablet {
-        min-height: 350px;
+        min-height: 300px;
+        height: 300px;
     }
     @media @mobile {
-        min-height: 200px;
+        height: 250px;
+        min-height: 250px;
     }
 }
 
@@ -767,6 +769,9 @@
 }
 
 .phone-number-link {
+    &:hover {
+        text-decoration: none;
+    }   
     @media @mobile {
         color: @font-swatch9-color;
         background-color: @color-swatch3;
@@ -978,11 +983,6 @@ input.input[type=search],
     }
 }
 
-.twitter__timestamp,
-.twitter-feed__via {
-    color: @font-swatch7-color;
-}
-
 
 
 
@@ -1108,6 +1108,10 @@ hr.rule {
     .twitter-feed {
         padding: 0;
         background-color: transparent;
+    }
+    .twitter__timestamp,
+    .twitter-feed__via {
+        color: @font-swatch7-color;
     }
 }
 
