@@ -106,23 +106,21 @@
 // ------
 
 .template-footer {
-	min-height: 100px;
 	text-align: center;
 	color: @font-swatch9-color;
 	// Change heading elements to white
 	h1, h2, h3, h4 {
-		color: @font-swatch9-color;
+		color: @font-swatch7-color;
 	}
 	// Lighten paragraph & link elements
 	p, a {
-		color: @font-swatch9-color;
+		color: @font-swatch7-color;
 		padding: 0;
 	}
-	// Reset Twitter feed styles
-	.twitter-feed {
-		padding: 0;
-		background-color: transparent;
-	}
+    .container {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
 }
 
 
@@ -208,7 +206,8 @@ form, .form {
         text-align: center;
     }
     @media @mobile {
-        padding: 20px;
+        padding: 0;
+        width: 100%;
     }
 }
 
