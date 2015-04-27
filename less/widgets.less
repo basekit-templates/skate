@@ -247,7 +247,7 @@
 }
 
 .widget__feature {
-    width: 49%;
+    width: 100%;
     display: inline-block;
     @media @tablet {
         width: 100%;
@@ -256,16 +256,21 @@
     }
 }
 
-.feature-container [data-widget-type="feature"]:first-child .feature {
+/*.feature-container [data-widget-type="feature"]:first-child .feature {
     margin-right: 2%;
     @media @tablet {
         margin-bottom: 3%;
     }
-}
+} */
 
 .feature-left-container,
 .feature-right-container {
     float: left;
+    width: 48%;
+}
+
+.feature-left-container {
+    margin-right: 2%;
 }
 
 // -----------------------------
