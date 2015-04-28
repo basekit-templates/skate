@@ -311,21 +311,6 @@
     }
 }
 
-.widget__imagewidget {
-    width: 49%;
-    display: inline-block;
-    float: left;
-    margin-right: 1%;
-    @media @tablet {
-        width: 100%;
-        display: block;
-        margin-left: 0;
-    }
-}
-
-.imagewidget__image {
-    height: 350px;
-}
 
 
 
@@ -983,6 +968,7 @@ input.input[type=search],
 
 .twitter__tweet-item {
     display: inline-block;
+    margin-right: 20px;
     &:last-child {
         border-bottom:0;
         padding: 0 0 7px 0;
@@ -1150,18 +1136,23 @@ hr.rule {
 // 15. Yelp
 // -----------------------------
 
-.yelpreview__review-list {
-    background-color: @color-swatch7;
-    margin: 0;
-    padding: 20px;
-}
-
-.yelp-reviews__review-title {
-    font-size: @font-swatch4-font-size;
-}
-
-.yelpreview__review-item {
-    list-style: none;
+.yelpreview {
+    border: 1px solid darken(@color-swatch1,10%);
+    .yelp-title {
+        border-bottom: 1px solid darken(@color-swatch1,10%);
+        padding: 20px;
+    }
+    .review-list {
+        background-color: @color-swatch7;
+        margin: 0;
+        padding: 20px;
+    }
+    .review-title {
+        font-size: @font-swatch4-font-size;
+    }
+    .review-item {
+        list-style: none;
+    }
 }
 
 
