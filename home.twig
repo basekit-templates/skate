@@ -4,14 +4,19 @@
 
 {% include "includes/header.twig" %}
 
-<div class="fixed-header">
-    <div class="logo-header container">
-        <div class="logo-companyname">
-                <span class="resize-logo">{{widget('logo', 'sitelogo', {"defaultlogo": asset('images/logo.jpg')})|raw}}</span>
-                {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-            <div class="header-extendednavigation">
-                {{widget('extendednavigation', 'extendednavigation', {})|raw}}
+<div class="fixed-header-wrap">
+    <div class="fixed-header">
+        <div class="logo-header container">
+            <div class="logo-companyname">
+                    <span class="resize-logo">{{widget('logo', 'sitelogo', {"defaultlogo": asset('images/logo.jpg')})|raw}}</span>
+                    {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+                <div class="header-extendednavigation">
+                    {{widget('extendednavigation', 'extendednavigation', {})|raw}}
+                </div>
             </div>
+        </div>
+        <div class="header-line">
+
         </div>
     </div>
 </div>
@@ -19,8 +24,6 @@
 <!-- Container -->
 
 <div class="page-content">
-    <div class="header-line">
-    </div>
     <div class="container">
         <div class="homepage-slideshow">
         	{{widget('responsiveslideshow', 'slideshow', {
@@ -78,16 +81,16 @@
                 })|raw}}
             </div>
         </div>
-    
+
     	<!-- Page Content -->
     	<section class="template-content">
-    
+
     		<!-- Main Widet Zone -->
     	   	{{zone('main')|raw}}
-    
+
     	</section>
     	<!-- End Page Content -->
-    
+
     </div>
     <!-- End Container -->
 </div>

@@ -61,32 +61,37 @@
     min-height: 28%;
 }
 
-.fixed-header.shrink {
+@media only screen and (min-width:860px) {
+    .fixed-header.shrink {
         min-height: 14%;
-        border-bottom: 1px solid darken(@color-swatch1,10%);
         position: fixed;
         z-index: 9998;
         top: 0;
         left: 0;
-    .container {
-        padding: 10px 0 30px 0;
-    }
-    .company-link {
-        font-size: bkscale(@font-swatch10-font-size,.8);
-        line-height:bkscale(@font-swatch10-line-height,.8);
-        -webkit-transition: all 0.6s;
-        -moz-transition: all 0.6s;
-        transition: all 0.6s;
-    }
-    .navigation-item .item-name {
-        font-size: bkscale(@font-swatch6-font-size,.8);
-        line-height:bkscale(@font-swatch6-line-height,.8);
-        -webkit-transition: all 0.6s;
-        -moz-transition: all 0.6s;
-        transition: all 0.6s;
-    }
-    .companyname {
-        margin: 0;
+
+        .container {
+            padding: 10px 0 30px 0;
+        }
+
+        .company-link {
+            font-size: bkscale(@font-swatch10-font-size,.8);
+            line-height:bkscale(@font-swatch10-line-height,.8);
+            -webkit-transition: all 0.6s;
+            -moz-transition: all 0.6s;
+            transition: all 0.6s;
+        }
+
+        .navigation-item .item-name {
+            font-size: bkscale(@font-swatch6-font-size,.8);
+            line-height:bkscale(@font-swatch6-line-height,.8);
+            -webkit-transition: all 0.6s;
+            -moz-transition: all 0.6s;
+            transition: all 0.6s;
+        }
+
+        .companyname {
+            margin: 0;
+        }
     }
 }
 
@@ -136,7 +141,7 @@
 // Colour Swatches
 // ---------------
 
-// @color-swatch1: Background 
+// @color-swatch1: Background
 // @color-swatch2: Contrast
 // @color-swatch3: Buttons
 // @color-swatch4: Headings
@@ -163,8 +168,8 @@
 // Standard Text Link
 // ------------------
 
-a { 
-    color: @color-swatch2; 
+a {
+    color: @color-swatch2;
 }
 
 
@@ -217,14 +222,14 @@ form, .form {
 // Form Body
 .form-body {
 	margin: 10px 0 20px;
-    position: relative; 
+    position: relative;
 	@media @mobile {
 		margin: 20px;
 	}
 }
 
 // Form Group
-.form-group { 
+.form-group {
 	margin-bottom: 20px;
 	@media @mobile {
 		margin-bottom: 10px;
@@ -235,7 +240,7 @@ form, .form {
 // Legend
 // ----------
 
-legend { 
+legend {
 	width: 100%;
 	padding: 30px 30px;
 	color: @font-swatch4-color;
@@ -285,8 +290,8 @@ textarea,
     }
 }
 
-.signupform__label, 
-.contactform__legend, 
+.signupform__label,
+.contactform__legend,
 .blogsearch__legend {
     border-bottom: 0;
     text-align: center;
@@ -323,7 +328,7 @@ textarea,
 // 4. #Buttons
 // -----------------------------
 
-button, 
+button,
 .button,
 .blogpostlist__read-more {
     padding: 8px 20px;

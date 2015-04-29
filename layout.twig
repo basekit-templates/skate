@@ -55,23 +55,23 @@
 
 <!-- Resizing Header Script -->
     <script>
-
+        var headerHeight = $('.fixed-header').height();
         var headerHandler = function () {
-            if($(window).width() >= 860) {
-                var shrinkHeader = 30;
-                var scroll = getCurrentScroll();
-                if ( scroll >= shrinkHeader ) {
-                    $('.fixed-header').addClass('shrink');
-                }
-                else
-                {
-                    $('.fixed-header').removeClass('shrink');
-                }
 
-                function getCurrentScroll() {
-                    return window.pageYOffset || document.documentElement.scrollTop;
-                }
+            $('.fixed-header-wrap').height(headerHeight);
 
+            var scroll = getCurrentScroll();
+            if ( scroll >= 1 ) {
+                $('.fixed-header').addClass('shrink');
+            }
+            else
+            {
+                $('.fixed-header').removeClass('shrink');
+                $('.fixed-header-wrap').height('auto');
+            }
+
+            function getCurrentScroll() {
+                return window.pageYOffset || document.documentElement.scrollTop;
             }
         };
 
