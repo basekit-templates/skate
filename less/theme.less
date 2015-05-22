@@ -196,7 +196,7 @@ form, .form {
     background-color: @color-swatch7;
     position: relative;
     border: 1px solid darken(@color-swatch1,10%);
-    width: 70%;
+    width: 100%;
     margin: 20px auto 0;
     &:before {
         content: '\2605';
@@ -215,6 +215,12 @@ form, .form {
     }
     @media @mobile {
         padding: 0;
+    }
+}
+
+.blogsearch__form {
+    width: 70%;
+    @media @tablet {
         width: 100%;
     }
 }
