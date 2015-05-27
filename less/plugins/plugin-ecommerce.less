@@ -263,6 +263,9 @@
 
 .ecomproductslist__product-filters {
     padding: 0 20px;
+    @media @tablet {
+        padding: 0 20px 20px 20px;
+    }
 }
 
 .ecomproductslist__product-content {
@@ -516,6 +519,13 @@
     background-color: transparent;
 }
 
+.ecombasketsummary__summary-form {
+    text-align: right;
+    @media @tablet {
+        text-align: center;
+    }
+}
+
 .ecomproductslist__form {
     width: 100%;
     &:before {
@@ -560,6 +570,10 @@ th {
     text-align: right;
 }
 
+.ecombasketsummary__message {
+    margin: 20px 0;
+}
+
 // -------------------------------
 // 5. #Basket Filters
 // -------------------------------
@@ -571,6 +585,15 @@ th {
         float: initial;
         width: 100%;
     }
+}
+
+.responsivecolumns .ecomproductslist__fieldset--search {
+    float: initial;
+    width: 100%;
+}
+
+.responsivecolumns .ecomproductslist__fieldset--filters {
+    width: 100%;
 }
 
 .ecomproductslist__fieldset--filters {

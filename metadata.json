@@ -15,7 +15,8 @@
         "images/slideshow/slideshow-2.jpg",
         "images/slideshow/slideshow-3.jpg",
         "images/logo.jpg",
-        "images/image-1.jpg"
+        "images/feature-img1.jpg",
+        "images/feature-img2.jpg"
     ],
     "colorSwatches":
     {
@@ -30,12 +31,12 @@
         },
         "Swatch 2": {
             "color1":"#FFFFFF",
-            "color2":"#ca1414",
-            "color3":"#ca1414",
-            "color4":"#000000",
+            "color2":"#322345",
+            "color3":"#322345",
+            "color4":"#322345",
             "color5":"#888888",
             "color6":"#FFFFFF",
-            "color7":"#F2F2F2"
+            "color7":"#FFFFFF"
         },
         "Swatch 3": {
             "color1":"#FFFFFF",
@@ -44,7 +45,7 @@
             "color4":"#4F7391",
             "color5":"#888888",
             "color6":"#FFFFFF",
-            "color7":"#F2F2F2"
+            "color7":"#FFFFFF"
         },
         "Swatch 4": {
             "color1":"#FFFFFF",
@@ -53,7 +54,7 @@
             "color4":"#000000",
             "color5":"#888888",
             "color6":"#FFFFFF",
-            "color7":"#F2F2F2"
+            "color7":"#FFFFFF"
         },
         "Swatch 5": {
             "color1":"#FFFFFF",
@@ -62,7 +63,7 @@
             "color4":"#2B7774",
             "color5":"#888888",
             "color6":"#FFFFFF",
-            "color7":"#F2F2F2"
+            "color7":"#FFFFFF"
         }
     },
     "fontSwatch": {
