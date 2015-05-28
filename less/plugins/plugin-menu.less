@@ -54,7 +54,7 @@
 
 .menusections__item-name {
     position: relative;
-    z-index: 9999;
+    z-index: 9997;
 }
 
 .menu-items,
@@ -70,6 +70,13 @@
 .widget__menu {
 	text-align: center;
     border: 1px solid darken(@color-swatch1,10%);
+}
+
+.menu__section-title,
+.menu__section-description {
+    @media @tablet {
+        padding: 0 10px;
+    }
 }
 
 .menu__item-header {
@@ -107,6 +114,9 @@
 .menu__item-article {
     background-color: @color-swatch7;
     padding: 20px;
+    @media @mobile {
+        padding: 0;
+    }
 }
 
 // Item Image

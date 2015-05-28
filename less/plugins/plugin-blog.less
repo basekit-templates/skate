@@ -101,6 +101,9 @@
     @media @mobile {
         text-align: center;
     }
+    hr {
+        border: 1px solid darken(@color-swatch7,10%);
+    }
 }
 
 .blogpostlist__image {
@@ -342,7 +345,7 @@
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
-    margin: 10px 0;
+    margin: 10px 0 30px;
 }
 
 .blogpost__post-attributes {
@@ -368,7 +371,7 @@
     background-color: @color-swatch7;
     position: relative;
     border: 1px solid darken(@color-swatch1,10%);
-    padding: 40px 20px 30px 20px;
+    padding: 40px 20px 0 20px;
     &:before {
         content: '\2605';
         color: @font-swatch4-color;
