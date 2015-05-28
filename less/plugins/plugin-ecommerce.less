@@ -41,8 +41,11 @@
 .ecomproduct__legend {
     padding: 36px 30px 20px;
     width: initial;
+    @media @tablet {
+        text-align: center;
+    }
     @media @mobile {
-        width: 50%;
+        display: inline-block;
     }
 }
 
@@ -77,6 +80,11 @@
     border-right: 1px solid darken(@color-swatch1,10%);
     padding-right: 20px;
     margin-right: 20px;
+    @media @mobile {
+        border-right: 0;
+        padding-right: 0;
+        margin-right: 0;
+    }
 }
 
 .ecomproduct__product-tags {
