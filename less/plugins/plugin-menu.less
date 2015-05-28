@@ -64,6 +64,9 @@
 
 .menu__section-body {
     padding: 0 20px;
+    @media @mobile {
+        padding: 0;
+    }
 }
 
 // Menu Content
@@ -145,9 +148,6 @@
         right: 0;
         margin: 0px auto;
     }
-    @media @mobile {
-        padding: 20px;
-    }
 }
 
 .menu-item--featured {
@@ -170,6 +170,12 @@
     }
     @media @mobile {
         padding: 20px;
+    }
+}
+
+.menu-item--featured .menu__item-article {
+    @media @mobile {
+        padding-top: 20px;
     }
 }
 
