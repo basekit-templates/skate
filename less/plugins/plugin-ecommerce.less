@@ -40,7 +40,10 @@
 
 .ecomproduct__legend {
     padding: 36px 30px 20px;
-    width: 50%;
+    width: initial;
+    @media @mobile {
+        width: 50%;
+    }
 }
 
 .ecomproduct__product-actions {
