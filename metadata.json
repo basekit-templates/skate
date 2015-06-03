@@ -131,17 +131,17 @@
         },
         "font8": {
             "font-family": "\"Roboto Slab\", Georgia, serif",
-            "font-size": "34px",
+            "font-size": "26px",
             "font-weight": "300",
-            "line-height": "42px",
+            "line-height": "34px",
             "color": "@color-swatch4",
             "letter-spacing": "3px"
         },
         "font9": {
             "font-family": "\"Roboto Slab\", Georgia, serif",
-            "font-size": "20px",
+            "font-size": "14px",
             "font-weight": "300",
-            "line-height": "28px",
+            "line-height": "22px",
             "color": "@color-swatch4",
             "letter-spacing": "3px"
         },
