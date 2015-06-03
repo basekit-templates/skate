@@ -178,8 +178,6 @@
     height: 350px;
     width: 49%;
     @media @tablet {
-        min-height: 300px;
-        height: 300px;
         width: 100%;
     }
     @media @mobile {
@@ -197,7 +195,6 @@
     max-width: 80%;
     vertical-align: middle;
     display: table-cell;
-    background-color: fade(@color-swatch4, 10%);
     @media @tablet {
         max-width: 100%;
     }
@@ -658,6 +655,9 @@
 
 .responsivecolumns .gallery__caption-link {
     display: none;
+    @media @tablet {
+        display: none;
+    }
 }
 
 .responsivecolumns .gallery__figure:hover .gallery__caption {

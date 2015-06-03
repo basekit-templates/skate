@@ -582,6 +582,12 @@
 .quantity-wrap .button--quantity {
     font-size: 13px;
     padding-left: 1px;
+    width: 30px;
+    height: 30px;
+    @media @mobile {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 .ecombasketsummary__quantity-wrap {
@@ -592,10 +598,7 @@
 }
 
 .quantity-wrap {
-    width: 60%;
-    @media @tablet {
-        width: 100%;
-    }
+    width: 100%;
 }
 
 th {
@@ -718,10 +721,24 @@ th {
     }
 }
 
+// General Select Elements
 select {
-    border-radius: 0!important;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0 30px 0 12px;
     @media @tablet {
-        width:100%;
+        width: 100%;
+    }
+}
+.select-wrap {
+    position: relative;
+    &:after {
+        font-family: 'FontAwesome', sans-serif;
+        text-rendering: auto;
+        content:"\f0d7";
+        position: absolute;
+        right: 10px;
+        top: 16%;
     }
 }
 
