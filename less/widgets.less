@@ -777,6 +777,13 @@
 }
 
 // Slideshow Pagination
+
+.responsiveslideshow .pagination-item {
+    display: inline-block;
+    line-height: normal;
+    overflow: hidden;
+}
+
 .responsiveslideshow__pagination-list {
     text-align: center;
     margin-top: 10px;
@@ -819,11 +826,12 @@
         position: absolute;
         left: -1px;
         top: -5px;
+        text-indent: 0;
     }
 }
 
-.responsiveslideshow__button:after {
-    color: @color-swatch1;
+.responsiveslideshow .button--pagination {
+    text-indent: -100px;
 }
 
 .responsiveslideshow__pagination-item.js-dot.js-slide-ctrl.selected {
@@ -1109,7 +1117,7 @@ input.input[type=search],
         left: 0;
         right: 0;
         margin: 0px auto;
-        margin-top: -15px;
+        margin-top: -13px;
         z-index: 9999;
     }
 }
@@ -1161,12 +1169,9 @@ hr.rule {
             margin: 10px auto 10px;
         }
     }
-    .signupform__form-body {
-        margin: 20px auto 0px;
-        @media @mobile {
-            margin: 20px auto 10px;
-        }
-    }
+    .signupform__form-group:nth-child(1) {
+        padding-top: 20px;
+    } 
     .signupform__form {
         padding: 0;
         width: 100%;
