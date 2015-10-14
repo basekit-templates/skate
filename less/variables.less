@@ -50,14 +50,17 @@ button,
 }
 
 .extendednavigation {
-	&__item-name.item-name {
-		color: darken(@color__navigation-item--text, 10%);
+	.navigation-item .item-name {
+		color: @color__navigation--text;
 		&:hover {
-			color: darken(@color__navigation-item--selected, 10%);
+			color: @color__navigation--text--hover;
 		}
 	}
-	&__navigation-item.selected {
-		color: darken(@color__navigation-item--selected, 10%);
+	&__navigation-item.selected > .item-name {
+		color: @color__navigation--text--selected;
+	}
+	&__navigation-item--background {
+		background-color: @color__navigation-item--background;
 	}
 }
 
