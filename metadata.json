@@ -214,14 +214,6 @@
             "color__socialicons--icon--background": "transparent",
             "color__socialicons--text": "@color__secondary"
         },
-        "blog": {
-            "color__blogsearch--background": "@color-swatch1",
-            "color__blogsearch-legend--text": "@color-swatch4",
-            "color__blogpostlist-article--background": "@color-swatch1",
-            "color__blogpostlist-title--text": "@font-swatch4-color",
-            "color__blogpost-article--background": "@color-swatch1",
-            "color__blogpost-title--text": "@font-swatch4-color"
-        },
         "menu": {
             "color__menu--background": "@color-swatch1",
             "color__menusections--background": "@color-swatch1",
