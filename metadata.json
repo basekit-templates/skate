@@ -178,10 +178,10 @@
             "color__button--text--hover": "@font-swatch1-color"
         },
         "header": {
-            "color__header--background": "@color-swatch4"
+            "color__header--background": "@color__primary"
         },
         "footer": {
-            "color__footer--background": "@color-swatch4"
+            "color__footer--background": "@color__primary"
         },
         "navigation": {
             "color__navigation--text": "@font-swatch6-color",
@@ -233,6 +233,16 @@
             "color__ecombasket--background": "@color-swatch1",
             "color__ecombasket-button--background": "@color-swatch3",
             "color__ecombasket-button--text": "@font-swatch7-color"
+        },
+        "menu": {
+            "color__menusections--background": "@color-swatch1",
+            "color__menu--background": "@color-swatch1",
+            "color__menu-item-title--text": "@font-swatch4-color",
+            "color__menu-item--background": "@color-swatch1",
+            "color__menu-item-featured-title--text": "@font-swatch4-color",
+            "color__menu-section-featured--text": "@font-swatch4-color",
+            "color__menu-section-featured--border": "darken(@color-swatch7,10%)",
+            "color__menu-subsection-header--text": "@font-swatch4-color"
         }
     }
 }
