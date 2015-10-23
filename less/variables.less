@@ -59,9 +59,6 @@ button,
 	&__navigation-item.selected > .item-name {
 		color: @color__navigation--text--selected;
 	}
-	&__navigation-item--background {
-		background-color: @color__navigation-item--background;
-	}
 }
 
 .feature {
@@ -118,8 +115,125 @@ form,
 	}
 }
 
+// Blog
+
+.blogsearch {
+
+	background-color: @color__blogsearch--background;
+
+	&_legend {
+		color: @color__blogsearch-legend--text;
+	}
+}
+
 .blogpostlist {
+
 	&__post-article {
 		background-color: @color__blogpostlist-article--background;
+	}
+
+	&__post-title {
+		color: @color__blogpostlist-title--text;
+	}
+}
+
+.blogpost {
+
+	&__post-article {
+		background-color: @color__blogpost-article--background;
+	}
+
+	&__post-title {
+		color: @color__blogpost-title--text;
+	}
+}
+
+
+// Ecommerce
+
+.ecomproductslist {
+
+	&__product-filters {
+		background-color: @color__ecomproductslist-filters--background;
+	}
+
+	&__label {
+		color: @color__ecomproductslist-label--text;
+	}
+
+	&____product-item {
+		background-colour: @color__ecomproductslist-product-item--background;
+	}
+
+	&__product-title {
+		color: @color__ecomproductslist-product-title--text;
+	}
+
+	&__product-price {
+		color: @color__ecomproductslist-product-price--text;
+	}
+}
+
+.ecomproduct {
+
+	background-color: @color__ecomproduct--background;
+
+	&__product-title {
+		color: @color__ecomproduct-title--text;
+	}
+
+	&__product-price {
+		color: @color__ecomproduct-price--text;
+	}
+
+}
+
+.ecombasket {
+
+	background-color: @color__ecombasket--background;
+
+	&__button {
+		background-color: @color__ecombasket-button--background;
+		color: @color__ecombasket-button--text;
+	}
+}
+
+
+// Menu
+
+.menusections {
+	background-color: @color__menusections--background;
+}
+
+.menu {
+
+	background-color: @color__menu--background;
+
+	&__menu-item {
+		background-color: @color__menu-item--background;
+		color: @color__menu-item-title--text;
+	}
+
+	&__item-featured {
+		background-color: @color__menu-item-featured--background;
+		color: @color__menu-item-featured-title--text;
+	}
+
+	&__section-header {
+		background-color: @color__menu-section-header--background;
+		color: @color__menu-section-header--text;
+	}
+
+	&__section--featured {
+		color: @color__menu-section-featured--text;
+		border: @color__menu-section-featured--border;
+	}
+
+	&__subsection-header {
+		color: @menu-subsection-header--text;
+	}
+
+	&__subsection-featured-header {
+		color: @menu-subsection-featured-header;
 	}
 }
