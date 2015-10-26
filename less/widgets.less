@@ -73,12 +73,12 @@
 
 .company-link {
     @media @tablet {
-        font-size: bkscale(@font-swatch10-font-size,0.8);
-        line-height: bkscale(@font-swatch10-line-height,0.8);
+        font-size: bkscale(@companyname-font-size,0.8);
+        line-height: bkscale(@companyname-line-height,0.8);
     }
     @media @mobile {
-        font-size: bkscale(@font-swatch10-font-size,0.7);
-        line-height: bkscale(@font-swatch10-line-height,0.7);
+        font-size: bkscale(@companyname-font-size,0.7);
+        line-height: bkscale(@companyname-line-height,0.7);
     }
 }
 
@@ -155,7 +155,7 @@
 // Add Styles to Selected Li
 .extendednavigation li.selected {
     a, .text {
-        color: @font-swatch6-color-hover;
+        color: @color__navigation--text-hover;
     }
 }
 
@@ -301,7 +301,7 @@
 
 .feature__button {
     margin: 10px 0 0 0;
-    color: @font-swatch7-color;
+    color: @color__button--text;
     background-color: @color-swatch3;
       flex-shrink: 0;
     &:hover {
@@ -379,20 +379,20 @@
 // Gallery & Slideshow
 .image-title,
 .image-description {
-    color: @font-swatch5-color;
+    color: @color__p--text;
 }
 
 // Image Widget
 
 .imagewidget {
     .image-title {
-        color: @font-swatch4-color;
+        color: @color__h4--text;
         font-size: @font-swatch4-font-size;
         line-height: @font-swatch4-line-height;
         text-shadow: none;
     }
     .image-description {
-        color: @font-swatch5-color;
+        color: @color__p--text;
         font-size: @font-swatch5-font-size;
         line-height: @font-swatch5-line-height;
         text-shadow: none;
@@ -613,7 +613,7 @@
     margin: 0;
     .image-title,
     .image-description {
-        color: @font-swatch4-color;
+        color: @color__h4--text;
         text-shadow: none;
     }
     .image-title {
@@ -721,7 +721,7 @@
 .responsiveslideshow__image-title,
 .responsiveslideshow__image-description {
     padding: 0 20%;
-    color: @font-swatch7-color;
+    color: @color__button--text;
     @media @tablet {
         padding: 0 30%;
     }
@@ -801,7 +801,7 @@
 
 .responsiveslideshow .pagination-item.selected .button--pagination {
     background-color: transparent;
-    color: @font-swatch7-color;
+    color: @color__button--text;
 }
 
 .responsiveslideshow__next-button,
@@ -835,7 +835,7 @@
 
 .responsiveslideshow__pagination-item.js-dot.js-slide-ctrl.selected {
     .responsiveslideshow__button:after {
-        color: @font-swatch4-color;
+        color: @color__h4--text;
     }
 }
 
@@ -876,7 +876,7 @@
         text-decoration: none;
     }
     @media @mobile {
-        color: @font-swatch9-color;
+        color: @color__feature-strapline--text;
         background-color: @color-swatch3;
     }
 }
@@ -885,7 +885,7 @@
 .phone-number-link {
     background-color: @color-swatch3;
     padding: 12px 40px;
-    color: @font-swatch7-color;
+    color: @color__button--text;
     }
 }
 
@@ -919,7 +919,7 @@
 .responsiveslideshow__previous-button,
 .responsiveslideshow__pause-toggle {
     background-color: @color-swatch4;
-    color: @font-swatch7-color;
+    color: @color__button--text;
 }
 
 
@@ -1000,7 +1000,7 @@ input.input[type=search],
 
 .socialicons__social-item a:hover {
     text-decoration: none;
-    color: @font-swatch7-color;
+    color: @color__button--text;
     background-color: @color-swatch3;
     border: 1px solid @color-swatch3;
 }
@@ -1009,7 +1009,7 @@ input.input[type=search],
     border: 1px solid @color-swatch4;
     padding: 10px;
     display: inline-block;
-    color: @font-swatch4-color;
+    color: @color__h4--text;
     width: 40px;
     height: 38px;
     text-align: center;
@@ -1107,7 +1107,7 @@ input.input[type=search],
     height: 1px;
     &:before {
         content: '\2605';
-        color: @font-swatch4-color;
+        color: @color__h4--text;
         position: absolute;
         margin-left: -2px;
         width: 15px;
@@ -1160,7 +1160,7 @@ hr.rule {
     }
     .signupform__label {
         padding: 0;
-        color: @font-swatch4-color;
+        color: @color__h4--text;
         font-size: @font-swatch3-font-size;
         &:after {
             margin: 10px auto 10px;
@@ -1198,7 +1198,7 @@ hr.rule {
     input.input[type=email],
     input.input[type=search],
     .contact-form__textarea {
-        color: @font-swatch5-color;
+        color: @color__p--text;
     }
     .twitter__tweet-meta {
         font-size: 13px;
@@ -1210,14 +1210,14 @@ hr.rule {
     }
     .twitter__timestamp,
     .twitter-feed__via {
-        color: @font-swatch7-color;
+        color: @color__button--text;
     }
 }
 
 .widget__profile {
     .clearfix;
     a,p,h1,h2,h3,h4 {
-        color: @font-swatch7-color;
+        color: @color__button--text;
     }
 }
 
