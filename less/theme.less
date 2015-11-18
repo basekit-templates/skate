@@ -120,14 +120,14 @@
 
 .template-footer {
 	text-align: center;
-	color: @font-swatch9-color;
+	color: @color__feature-strapline--text;
 	// Change heading elements to white
 	h1, h2, h3, h4 {
-		color: @font-swatch7-color;
+		color: @color__button--text;
 	}
 	// Lighten paragraph & link elements
 	p, a {
-		color: @font-swatch7-color;
+		color: @color__button--text;
 		padding: 0;
 	}
     .container {
@@ -205,11 +205,11 @@ form, .form {
     margin: 20px auto 0;
     &:before {
         content: '\2605';
-        color: @font-swatch4-color;
+        color: @color__h4--text;
         position: absolute;
         top: -16px;
         margin-left: -2px;
-        background-color: @color-swatch1;
+        background-color: transparent;
         width: 16px;
         left: 0;
         right: 0;
@@ -247,7 +247,6 @@ form, .form {
 legend {
 	width: 100%;
 	padding: 30px 30px;
-	color: @font-swatch4-color;
 	@media @mobile {
 		padding: 6px 20px;
 	}
@@ -302,7 +301,7 @@ textarea,
     font-size: @font-swatch1-font-size;
     font-weight: @font-swatch1-font-weight;
     padding: 30px 0 0;
-    color: @color-swatch4;
+    color: @color__form-legend--text;
 }
 
 .signupform__label {
@@ -338,7 +337,7 @@ button,
 .blogpostlist__read-more {
     padding: 8px 20px;
     background-color: @color-swatch4;
-    color: @font-swatch7-color;
+    color: @color__button--text;
     /*.transition (all,0.3s, ease-in-out);
 
     -webkit-backface-visibility: hidden;
@@ -367,6 +366,6 @@ button,
 .image-widget__caption { margin: 10px 0; }
 .image-widget__image-title,
 .image-widget__image-description {
-	color: @font-swatch5-color;
+	color: @color__p--text;
 	text-shadow: none;
 }
