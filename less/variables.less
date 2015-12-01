@@ -62,6 +62,9 @@ button,
 }
 
 .feature {
+	&__content-inner-wrap {
+		background-color: @color__feature-content--background;
+	}
 	&__headline {
 		color: @color__feature-headline--text;
 	}
@@ -87,29 +90,12 @@ form,
 }
 
 .responsiveslideshow {
-    background-color: @color__slideshow--background;
-    &__caption.caption {
-        background-color: @color__slideshow-caption--background;
-    }
     &__image-title.image-title {
         color: @color__slideshow-title--text;
     }
     &__image-description.image-description {
         color: @color__slideshow-description--text;
     }
-    .button--pagination {
-    	background-color: @color__slideshow-pagination-item--background;
-    	&:hover {
-    		background-color: @color__slideshow-pagination-item--background--hover;
-    	}
-    }
-    .pagination-item.selected .button--pagination {
-    	background-color: @color__slideshow-pagination-item--background--selected;
-    }
-}
-
-.twitter {
-	background-color: @color__twitter--background;
 }
 
 .socialicons {
@@ -122,111 +108,4 @@ form,
 			color: @color__socialicons--icon--hover;
 		}
 	}
-}
-
-// Blog
-
-.blogsearch {
-
-	background-color: @color__blogsearch--background;
-
-	&_legend {
-		color: @color__blogsearch-legend--text;
-	}
-}
-
-.blogpostlist {
-
-	&__post-article {
-		background-color: @color__blogpostlist-article--background;
-	}
-
-	&__post-title {
-		color: @color__blogpostlist-title--text;
-	}
-}
-
-.blogpost {
-
-	&__post-article {
-		background-color: @color__blogpost-article--background;
-	}
-
-	&__post-title {
-		color: @color__blogpost-title--text;
-	}
-}
-
-
-// Ecommerce
-
-.ecomproductslist {
-
-	&__product-filters {
-		background-color: @color__ecomproductslist-filters--background;
-	}
-
-	&__label {
-		color: @color__ecomproductslist-label--text;
-	}
-
-	&____product-item {
-		background-colour: @color__ecomproductslist-product-item--background;
-	}
-
-	&__product-title {
-		color: @color__ecomproductslist-product-title--text;
-	}
-
-}
-
-.ecomproduct {
-
-	background-color: @color__ecomproduct--background;
-
-	&__product-title {
-		color: @color__ecomproduct-title--text;
-	}
-
-	&__product-price {
-		color: @color__ecomproduct-price--text;
-	}
-
-}
-
-.ecombasket {
-
-	background-color: @color__ecombasket--background;
-
-	&__button {
-		background-color: @color__ecombasket-button--background;
-		color: @color__ecombasket-button--text;
-	}
-}
-
-
-// Menu
-
-.menusections {
-	background-color: @color__menusections--background;
-}
-
-.menu {
-
-	background-color: @color__menu--background;
-
-	&__menu-item {
-		background-color: @color__menu-item--background;
-		color: @color__menu-item-title--text;
-	}
-
-	&__item-featured {
-		color: @color__menu-item-featured-title--text;
-	}
-
-	&__section--featured {
-		color: @color__menu-section-featured--text;
-		border: @color__menu-section-featured--border;
-	}
-
 }

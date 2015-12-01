@@ -229,6 +229,7 @@
             "font__navigation--letter-spacing" : "@font-swatch6-letter-spacing"       
         },
         "feature": {
+            "color__feature-content--background": "@color-swatch7",
             "color__feature-headline--text": "@font-swatch8-color",
             "color__feature-strapline--text": "@font-swatch9-color",
             "color__feature-button--text": "@font-swatch7-color",
@@ -250,51 +251,13 @@
             "color__form-legend--text": "@color-swatch4"
         },
         "slideshow": {
-            "color__slideshow--background": "transparent",
-            "color__slideshow-caption--background": "fade(@color-swatch4,50%)",
             "color__slideshow-title--text": "@font-swatch7-color",
-            "color__slideshow-description--text": "@font-swatch7-color",
-            "color__slideshow-pagination-item--background": "@color-swatch1",
-            "color__slideshow-pagination-item--background--hover": "@color__primary",
-            "color__slideshow-pagination-item--background--selected": "@color__primary"
-        },
-        "twitter": {
-            "color__twitter--background": "@color-swatch1"
-        },
+            "color__slideshow-description--text": "@font-swatch7-color"
+        }, 
         "socialicons": {
             "color__socialicons--icon": "@color__primary",
             "color__socialicons--icon--hover": "@color-swatch1",
-            "color__socialicons--icon--background": "transparent",
-            "color__socialicons--text": "@color__secondary"
-        },
-        "blog": {
-            "color__blogsearch--background": "@color-swatch1",
-            "color__blogsearch-legend--text": "@color-swatch4",
-            "color__blogpostlist-article--background": "@color-swatch1",
-            "color__blogpostlist-title--text": "@font-swatch4-color",
-            "color__blogpost-article--background": "@color-swatch1",
-            "color__blogpost-title--text": "@font-swatch4-color"
-        },
-        "ecommerce": {
-            "color__ecomproductslist-filters--background": "@color-swatch1",
-            "color__ecomproductslist-label--text": "@color-swatch4",
-            "color__ecomproductslist-product-item--background": "@color-swatch1",
-            "color__ecomproductslist-product-title--text": "@color-swatch4",
-            "color__ecomproduct--background": "@color-swatch1",
-            "color__ecomproduct-title--text": "@font-swatch4-color",
-            "color__ecomproduct-price--text": "@font-swatch4-color",
-            "color__ecombasket--background": "@color-swatch1",
-            "color__ecombasket-button--background": "@color-swatch3",
-            "color__ecombasket-button--text": "@font-swatch7-color"
-        },
-        "menu": {
-            "color__menusections--background": "@color-swatch1",
-            "color__menu--background": "@color-swatch1",
-            "color__menu-item-title--text": "@font-swatch4-color",
-            "color__menu-item--background": "@color-swatch1",
-            "color__menu-item-featured-title--text": "@font-swatch4-color",
-            "color__menu-section-featured--text": "@font-swatch4-color",
-            "color__menu-section-featured--border": "darken(@color-swatch7,10%)"
+            "color__socialicons--icon--background": "transparent"
         }
     }
 }
