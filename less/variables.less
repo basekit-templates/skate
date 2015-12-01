@@ -97,6 +97,15 @@ form,
     &__image-description.image-description {
         color: @color__slideshow-description--text;
     }
+    .button--pagination {
+    	background-color: @color__slideshow-pagination-item--background;
+    	&:hover {
+    		background-color: @color__slideshow-pagination-item--background--hover;
+    	}
+    }
+    .pagination-item.selected .button--pagination {
+    	background-color: @color__slideshow-pagination-item--background--selected;
+    }
 }
 
 .twitter {

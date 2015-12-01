@@ -253,7 +253,10 @@
             "color__slideshow--background": "transparent",
             "color__slideshow-caption--background": "fade(@color-swatch4,50%)",
             "color__slideshow-title--text": "@font-swatch7-color",
-            "color__slideshow-description--text": "@font-swatch7-color"
+            "color__slideshow-description--text": "@font-swatch7-color",
+            "color__slideshow-pagination-item--background": "@color-swatch1",
+            "color__slideshow-pagination-item--background--hover": "@color__primary",
+            "color__slideshow-pagination-item--background--selected": "@color__primary"
         },
         "twitter": {
             "color__twitter--background": "@color-swatch1"
