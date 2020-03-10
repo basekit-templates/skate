@@ -1,5 +1,6 @@
 {
     "name":"Skate",
+		"versionTenCompatible": 1,
     "thumbnail":"skate.png",
     "screenshot":"skate-screenshot.jpg",
     "tags": {
