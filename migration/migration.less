@@ -4,6 +4,17 @@
 
 
 #migrated-site {
+    
+    &.edit .fixed-header.shrink {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        width: calc(~'100% - 200px');
+    }
+    
+    .homepage-slideshow {
+        padding-top: 40px;    
+    }
 
 
 // Stylseheet overrides
@@ -11,14 +22,19 @@
 
 
 // Template wrapper (replace with corresponding template classes)
-.main.wrapper {
+.container {
   width: 100%;
   max-width: 100%;
-  margin: 0;
+  padding: 0;
+}
+
+.logo-header.container {
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
   
 // Main content spacing (replace with corresponding template class)
-.main {
+.template-content {
   padding: 0;
 }
 
@@ -28,6 +44,21 @@
 }
 
 
+.bk-pt-default {
+    
+    #page-zones__main > .widget[data-name="row"]:first-child .row__container {
+        padding-top:40px;
+        
+          @media @tablet {
+              padding-top: 20px;
+          }
+          
+          @media @mobile {
+            padding-top: 10px;
+          }
+    }
+}
+
 
 
 // Migration styles
@@ -35,7 +66,7 @@
 
 
 // Replace with corresponding template values
-@container-width: 960px;
+@container-width:  1400px;
 
 @spacing__first--desktop: 40px;
 @spacing__first--tablet:  30px;
@@ -47,8 +78,8 @@
 // Applies spacing to widgets to mimic container width
 .empty-zone,
 #page-zones__main:empty,
-#page-zones__main > .widget:not(.row),
-.row:not(.widget):not(.row--width-no-padding) .row__container {
+#page-zones__main > .widget:not([data-name="row"]),
+.row:not(.widget):not(.row--width-no-padding) .row__container, .homepage-slideshow, .feature-container  {
   margin-left: auto;
   margin-right: auto;
   max-width: @container-width;
@@ -57,10 +88,11 @@
 
 
 // Move spacing to first widget in the main zone (not sections)
-&.edit #page-zones__main-overlay + .widget:not(.row),
-#page-zones__main > .widget:not(.row):first-child {
+&.edit #page-zones__main-overlay + .widget:not([data-name="row"]),
+#page-zones__main > .widget:not([data-name="row"]):first-child {
   margin-top: @spacing__first--desktop;
-
+ 
+  
   @media @tablet {
     margin-top: @spacing__first--tablet;
   }
@@ -71,9 +103,8 @@
 
 
 // Move spacing to last widget in the main zone (not sections)
-#page-zones__main > .widget:not(.row):last-child {
+#page-zones__main > .widget:not([data-name="row"]):last-child {
   margin-bottom: @spacing__first--desktop;
-
   @media @tablet {
     margin-bottom: @spacing__first--tablet;
   }
@@ -84,19 +115,19 @@
 
 
 // Add spacing to the top of a widget when it follows a section
-#page-zones__main > .row + .widget:not(.row) {
+#page-zones__main > [data-name="row"] + .widget:not([data-name="row"]) {
   margin-top: @spacing--other;
 }
 
 
 // Remove spacing if widget follows a light section (change to dark if template has a dark BG)
-#page-zones__main > .row.style--light + .widget:not(.row) {
+#page-zones__main > .row.style--light + .widget:not([data-name="row"]) {
   margin-top: 0;
 }
 
 
 // Adds spacing to the section when a widget is before it
-#page-zones__main > .widget:not(.row) + .row {
+#page-zones__main > .widget:not([data-name="row"]) + [data-name="row"] {
   margin-bottom: @spacing--other;
   margin-top: @spacing--other;
 
